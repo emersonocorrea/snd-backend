@@ -6,9 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "nodemon src/server.js",
     "migrate": "knex migrate:latest --knexfile src/knexfile.js",
-    "rollback": "knex migrate:rollback --knexfile src/knexfile.js",
     "seed": "knex seed:run --knexfile src/knexfile.js"
   },
   "dependencies": {
