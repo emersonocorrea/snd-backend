@@ -10,7 +10,7 @@ import mealRoutes from './routes/meals.js';
 const app = express();
 
 // Middleware
-app.use(cors({ origin: process.env.FRONTEND_URL }));
+app.use(cors({ origin: '*' }));
 app.use(express.json());
 
 // Authentication middleware
